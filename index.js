@@ -10,8 +10,6 @@ import userRouter from './routes/userRouter.js';
 import { removeUnverifiedAccounts } from './automation/removeUnverifiedaccounts.js';
 
 
-
-
 export const app = express();
 
 app.use(cors({
@@ -39,3 +37,7 @@ connection()
 
 // error handling middleware 
 app.use(errorMiddleware)
+
+
+// ✅ Vercel needs the exported handler, not app.listen()
+export default app;

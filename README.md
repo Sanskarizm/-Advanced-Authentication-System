@@ -90,7 +90,7 @@ git clone https://github.com/Sanskarizm/authentication-system.git
 
 ### Register a New User
 ```bash
-curl -X POST https://advanced-authentication-system-r3br.vercel.app/api/v1/user/register \
+curl -X POST https://advanced-authentication-system.vercel.app/api/v1/user/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Sanskar",
@@ -103,7 +103,7 @@ curl -X POST https://advanced-authentication-system-r3br.vercel.app/api/v1/user/
 
 ### Login
 ```bash
-curl -X POST https://advanced-authentication-system-r3br.vercel.app/api/v1/user/login \
+curl -X POST https://advanced-authentication-system.vercel.app/api/v1/user/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "chotujainj@gmail.com",
@@ -113,8 +113,8 @@ curl -X POST https://advanced-authentication-system-r3br.vercel.app/api/v1/user/
 
 ### Get Current User
 ```bash
-curl -X GET https://advanced-authentication-system-r3br.vercel.app/api/v1/user/me \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+curl -X GET https://advanced-authentication-system.vercel.app/api/v1/user/me \
+  -H "Cookie: token=YOUR_JWT_TOKEN"
 ```
 
 ---
